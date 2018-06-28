@@ -6,7 +6,7 @@ eureka:
   register-with-eureka: false
   fetch-registry: false
   service-url:
-   defaultZone: http://localhost:1099/eureka
+   defaultZone: http://eureka-container:1099/eureka
  decoderName: JacksonJson
  instance:
   leaseExpirationDurationInSeconds: 6

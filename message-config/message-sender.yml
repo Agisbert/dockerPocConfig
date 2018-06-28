@@ -33,6 +33,6 @@ hystrix:
 eureka:
  client:
   serviceUrl:
-   defaultZone: http://localhost:1099/eureka
+   defaultZone: http://eureka-container:1099/eureka
   register-with-eureka: false
   registryFetchIntervalSeconds: 2
