@@ -14,4 +14,4 @@ eureka:
   registryFetchIntervalSeconds: 2
   
 zuul:
- sensitiveHeaders:
+ sensitiveHeaders:  
