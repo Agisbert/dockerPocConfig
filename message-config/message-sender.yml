@@ -1,6 +1,9 @@
 message-sender:
  signature: ${spring.application.name}:${random.value}
 
+server:
+ port: 8080
+ 
 message-printer:
  protocol: http://
  path: messages
@@ -30,5 +33,8 @@ eureka:
  client:
   serviceUrl:
    defaultZone: http://eureka-container:1099/eureka
-  register-with-eureka: true
   registryFetchIntervalSeconds: 2
+ instance:
+  instanceId: ${spring.application.name}:${spri‌​ng.application.insta‌​nce_id:${random.valu‌​e}}
+  healthCheckUrlPath: /actuator/health
+  statusPageUrl: /actuator/health
