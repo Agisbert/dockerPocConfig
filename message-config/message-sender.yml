@@ -7,8 +7,8 @@ server:
 message-printer:
  protocol: http://
  path: messages
- user: '{cipher}4a58fd1d4fe0d0160c8de702102f1f953d8d854bfaed94610ac656fdffb16cdd'
- pass: '{cipher}bb9603b489e23313da8408b37f70aea8fb0f7448d3c046297a334f8b427cd35a'
+ user: '{cipher}cbe743bfe4b3837d5f19c7b3b80a1b0a7db9cd1b04da6fb98da0ea6565da0ba06f7e664af9c1cc06879d197e0e61b025'
+ pass: '{cipher}6fb152d678ad50a5c0c3f351b9e958f2d00c6834f1a3740b8293cf748ce7298271570b8b6bbafe18837a14e91bdc9fc6'
 ribbon:
  ConnectTimeout: 1000
  ReadTimeout: 1000
