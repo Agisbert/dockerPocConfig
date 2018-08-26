@@ -2,7 +2,7 @@ message-sender:
  signature: ${spring.application.name}:${random.value}
 
 server:
- port: 8080
+ port: 8082
  
 message-printer:
  protocol: http://

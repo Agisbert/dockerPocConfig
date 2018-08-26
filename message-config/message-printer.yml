@@ -4,7 +4,7 @@ message-printer:
  pass: '{cipher}66a41e7533ee86290b9b7c63bba4e714dbd03a9e6597e7b558cdc32d93714137da8acfc0102bd5a0eeb6a8856290accc'
 
 server:
- port: 8080
+ port: 8081
  
 eureka:
  client:
