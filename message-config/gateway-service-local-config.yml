@@ -1,10 +1,6 @@
 server:
  port: 8080
 
-spring:
- application:
-  name: zuul-server
-
 eureka:
  client:
   serviceUrl:
@@ -12,6 +8,3 @@ eureka:
   register-with-eureka: false
   fetchRegistry: true
   registryFetchIntervalSeconds: 2
-  
-zuul:
- sensitiveHeaders:  

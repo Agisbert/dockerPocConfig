@@ -7,10 +7,8 @@ server:
  port: 8081
  
 eureka:
- client:
-  serviceUrl:
-   defaultZone: http://localhost:1099/eureka
- instance:
-  instanceId: ${spring.application.name}:${spri‌​ng.application.insta‌​nce_id:${random.valu‌​e}}
-  healthCheckUrlPath: /actuator/health
-  statusPageUrl: /actuator/health
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1099/eureka
+  instance:
+    instanceId: ${spring.application.name}:${spri‌​ng.application.insta‌​nce_id:${random.valu‌​e}}
