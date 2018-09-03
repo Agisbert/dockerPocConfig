@@ -1,37 +1,35 @@
 message-sender:
- signature: ${spring.application.name}:${random.value}
+  signature: ${spring.application.name}:${random.value}
 
 server:
- port: 8082
+  port: 8082
  
 message-printer:
- protocol: http://
- path: messages
- user: '{cipher}cbe743bfe4b3837d5f19c7b3b80a1b0a7db9cd1b04da6fb98da0ea6565da0ba06f7e664af9c1cc06879d197e0e61b025'
- pass: '{cipher}6fb152d678ad50a5c0c3f351b9e958f2d00c6834f1a3740b8293cf748ce7298271570b8b6bbafe18837a14e91bdc9fc6'
+  protocol: http://
+  path: messages
+  user: '{cipher}cbe743bfe4b3837d5f19c7b3b80a1b0a7db9cd1b04da6fb98da0ea6565da0ba06f7e664af9c1cc06879d197e0e61b025'
+  pass: '{cipher}6fb152d678ad50a5c0c3f351b9e958f2d00c6834f1a3740b8293cf748ce7298271570b8b6bbafe18837a14e91bdc9fc6'
 ribbon:
- ConnectTimeout: 1000
- ReadTimeout: 1000
+  ConnectTimeout: 1000
+  ReadTimeout: 1000
 
 
 hystrix:
- command:
-  default:
-   execution:
-    isolation:
-     thread:
-      timeoutInMilliseconds: 2000
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2000
   circuitBreaker:
-   requestVolumeThreshold: 4
-   sleepWindowInMilliseconds: 50000
-   errorThresholdPercentage: 50
+    requestVolumeThreshold: 4
+    sleepWindowInMilliseconds: 50000
+    errorThresholdPercentage: 50
 
 eureka:
- client:
-  serviceUrl:
-   defaultZone: http://eureka-container:1099/eureka
-  registryFetchIntervalSeconds: 2
- instance:
-  instanceId: ${spring.application.name}:${spri‌​ng.application.insta‌​nce_id:${random.valu‌​e}}
-  healthCheckUrlPath: /actuator/health
-  statusPageUrl: /actuator/health
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-container:1099/eureka
+    registryFetchIntervalSeconds: 2
+  instance:
+    instanceId: ${spring.application.name}:${spri‌​ng.application.insta‌​nce_id:${random.valu‌​e}}

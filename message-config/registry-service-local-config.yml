@@ -2,9 +2,13 @@ server:
  port: 1099
 
 eureka:
- decoderName: JacksonJson
- instance:
-  leaseExpirationDurationInSeconds: 6
-  leaseRenewalIntervalInSeconds: 2
- server:
-  response-cache-update-interval-ms: 2000
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-container:1099/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    leaseExpirationDurationInSeconds: 6
+    leaseRenewalIntervalInSeconds: 2
+  server:
+    response-cache-update-interval-ms: 2000
