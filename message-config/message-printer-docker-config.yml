@@ -14,3 +14,9 @@ eureka:
   instanceId: ${spring.application.name}:${spri‌​ng.application.insta‌​nce_id:${random.valu‌​e}}
   healthCheckUrlPath: /actuator/health
   statusPageUrl: /actuator/health
+  
+logging:
+  level:
+    com:
+      netflix:
+        eureka: DEBUG
